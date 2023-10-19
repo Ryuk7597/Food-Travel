@@ -264,7 +264,7 @@ section .peça:hover i {
 .box {
     text-align: center;
     position: relative;
-    width: 335px;
+    width: 325px;
     height: 490px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -338,7 +338,6 @@ section .peça:hover i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
-    background-color: #A40F0F;
     position: relative;
     left: -5px;
 }
@@ -372,13 +371,6 @@ section .peça:hover i {
     opacity: 0;
     border-radius: 7px;
     transition: 0.3s;
-}
-
-.botao {
-    position: relative;
-    top: -240px;
-    right: 20px;
-    opacity: 1;
 }
 
 .botao i {
@@ -443,6 +435,7 @@ section .peça:hover i {
 
 .Horário {
     background-image: url(assets/bg1.jpg);
+    width: 100%;
     height: 85vh;
     position: relative;
 }
@@ -454,7 +447,7 @@ section .peça:hover i {
     left: 0;
     margin: 0 auto;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-family: "Oswald", sans-serif;
     letter-spacing: 8px;
     font-size: 55px;
@@ -511,16 +504,12 @@ section .peça:hover i {
     background-color: #ACACAC
 }
 
-.lista li p,
-.texto-marrom {
+.lista li p, .texto-marrom {
     position: absolute;
     top: 0;
     right: 0;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-}
-
-.lista li p {
     color: #ACACAC;
 }
 
@@ -719,8 +708,6 @@ section .peça:hover i {
 }
 
 .contatos {
-    background-image: url(assets/bg1.jpg);
-    height: 85vh;
     text-align: center;
     position: relative;
     width: 100%;

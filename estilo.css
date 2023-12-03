@@ -9,9 +9,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     width: 100%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 section nav {
@@ -22,7 +30,7 @@ section nav {
     right: 0;
     left: 0;
     background: #A40F0F;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #00000080;
     z-index: 1000;
 }
 
@@ -43,7 +51,7 @@ section nav ul li {
 
 section nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-weight: 500;
     font-size: 17px;
     transition: 0.1s;
@@ -68,7 +76,7 @@ section nav ul li a:hover {
 
 section nav .icones i {
     font-size: 18px;
-    color: #000;
+    color: #ffffff;
     margin: 0 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -78,23 +86,62 @@ section nav .icones i:hover {
     color: #fac031;
 }
 
+.espaço {
+    height: 170px;
+}
+
+.começa {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: relative;
+    top: 110px;*/
+    background-color: #daa520;
+}
+/*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
 section .começo {
+    width: 85%;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*
+@media screen and (max-width: 1300px) {
+    .começo {
+        background-color: #ac3737;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+}*/
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.texto {
+    width: 700px;
+    height: 300px;
     position: relative;
-    top: 130px;
-    width: 100%;
-    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.texto p {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section .começo .texto h1 {
-    font-size: 56px;
     width: 640px;
     height: 100px;
-    position: relative;
-    top: 0px;
-    left: 175px;
+    font-size: 56px; 
 }
 
 section .texto h1 span {
@@ -116,11 +163,8 @@ section .texto h1 span::after {
 }
 
 section .texto p {
+    width: 650px;
     height: 140px;
-    width: 60%;
-    position: relative;
-    left: 180px;
-    top: 40px;
     text-align: justify;
 }
 
@@ -150,31 +194,31 @@ section .peça:hover i {
 }
 
 .começo_imgem img {
-    height: 350px;
-    position: relative;
-    right: 80px;
+    height: 290px;
 }
 
 .INFORMAÇÃO {
     width: 100%;
-    height: 450px;
+    height: 500px;
     padding: 70px 0;
+    background-image: url(assets/bg1.jpg);
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
+    position: relative;
 }
 
 .seçao_informação {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    position: relative;
-    left: 75px;
-    top: -50px;
+    width: 85%;
     height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .imagem_informação img {
-    height: 400px;
+    height: 380px;
     position: absolute;
     top: 20px;
     left: -40px;
@@ -184,7 +228,8 @@ section .peça:hover i {
     width: 690px;
     height: 300px;
     position: relative;
-    right: -90px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .texto_informação h1 {
@@ -215,6 +260,8 @@ section .peça:hover i {
 
 
 .texto_informação h3 {
+    width: 100%;
+    text-align: left;
     font-size: 30px;
     padding: 10px;
     position: absolute;
@@ -266,7 +313,7 @@ section .peça:hover i {
     position: relative;
     width: 335px;
     height: 490px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px #00000033;
 }
 
 .box1 {
@@ -387,9 +434,9 @@ section .peça:hover i {
     align-items: center;
     justify-content: center;
     line-height: 50px;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
-    text-shadow: 0 0 6px #000;
+    text-shadow: 0 0 6px #000000;
     transition: 0.2s;
 }
 
@@ -429,7 +476,7 @@ section .peça:hover i {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     background: #000;
     padding: 8px 10px;
     margin: 0 80px;
@@ -454,7 +501,7 @@ section .peça:hover i {
     left: 0;
     margin: 0 auto;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-family: "Oswald", sans-serif;
     letter-spacing: 8px;
     font-size: 55px;
@@ -482,7 +529,6 @@ section .peça:hover i {
 .lista {
     max-width: 768px;
     position: absolute;
-    top: 170px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -566,7 +612,7 @@ section .peça:hover i {
 .ava1 {
     width: 350px;
     height: 535px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 8px #00000080;
     border-radius: 8px;
     padding: 8px 20px;
     margin: 0 8px;
@@ -711,7 +757,7 @@ section .peça:hover i {
 .peça {
     padding: 10px 0;
     background: #fac031;
-    color: white;
+    color: #ffffff;
     width: 40%;
     text-align: center;
     margin-top: 20px;
@@ -719,49 +765,9 @@ section .peça:hover i {
 }
 
 .contatos {
-    background-image: url(assets/bg1.jpg);
-    height: 85vh;
-    text-align: center;
+    background-color: #00ffff;
     position: relative;
     width: 100%;
-    height: 800px;
-}
-
-iframe {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.meio {
-    width: 85%;
-    height: 700px;
-    position: absolute;
-    top: 50px;
-    left: 101px;
-}
-
-.meio h1 {
-    padding: 20px;
-}
-
-.meio h2 {
-    padding: 20px;
-}
-
-.meio ul {
-    position: relative;
-}
-
-.meio img {
-    height: 30px;
-    position: absolute;
-    left: 0px;
-    bottom: -6px;
-}
-
-.meio li {
-    width: 180px;
-    position: relative;
-    left: 490px;
 }
 
 .rodape {
@@ -778,7 +784,7 @@ iframe {
 }
 
 .rodape span {
-    color: goldenrod;
+    color: #daa520;
 }
 
 .rodape a {
@@ -795,12 +801,12 @@ iframe {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: rgb(201, 9, 9);
-    border: 5px solid white;
+    background-color: #c90909;
+    border: 5px solid #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(201, 9, 9);
+    background-color: #c90909;
     border-radius: 50px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
 }

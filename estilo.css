@@ -280,8 +280,10 @@ section .peça:hover i {
 
 .Cardápio {
     width: 100%;
-    height: 1650px;
-    padding: 10px 0 5px 5px;
+    height: 2500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .Cardápio h1 {
@@ -309,85 +311,22 @@ section .peça:hover i {
 }
 
 .box {
+    width: 335px;
+    height: 570px;
     text-align: center;
     position: relative;
-    width: 335px;
-    height: 490px;
     box-shadow: 0 0 10px #00000033;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.box1 {
-    position: absolute;
-}
-
-.box2 {
-    position: absolute;
-    left: 340px;
-}
-
-.box3 {
-    position: absolute;
-    left: 680px;
-}
-
-.box4 {
-    position: absolute;
-    left: 1020px;
-}
-
-.box5 {
-    position: absolute;
-    top: 500px;
-}
-
-.box6 {
-    position: absolute;
-    top: 500px;
-    left: 340px;
-}
-
-.box7 {
-    position: absolute;
-    top: 500px;
-    left: 680px;
-}
-
-.box8 {
-    position: absolute;
-    top: 500px;
-    left: 1020px;
-}
-
-.box9 {
-    position: absolute;
-    top: 1000px;
-}
-
-.box10 {
-    position: absolute;
-    left: 340px;
-    top: 1000px;
-}
-
-.box4 a {
-    position: absolute;
-    bottom: 15px;
-}
-
-.box6 a {
-    position: absolute;
-    bottom: 15px;
-}
-
-.caixa {
+.caixas {
     width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    background-color: #A40F0F;
-    position: relative;
-    left: -5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 5px;
 }
 
 .img1 {
@@ -415,7 +354,6 @@ section .peça:hover i {
     float: right;
     position: relative;
     top: -240px;
-    right: -8px;
     opacity: 0;
     border-radius: 7px;
     transition: 0.3s;
@@ -424,7 +362,7 @@ section .peça:hover i {
 .botao {
     position: relative;
     top: -240px;
-    right: 20px;
+    right: -255px;
     opacity: 1;
 }
 
@@ -445,7 +383,8 @@ section .peça:hover i {
 }
 
 .info h2 {
-    width: 75%;
+    width: 80%;
+    height: 30px;
     text-align: center;
     margin: 10px auto 10px auto;
     font-size: 25px;
@@ -453,6 +392,8 @@ section .peça:hover i {
 }
 
 .info p {
+    width: 300px;
+    height: 70px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -477,7 +418,7 @@ section .peça:hover i {
     justify-content: center;
     text-decoration: none;
     color: #ffffff;
-    background: #000;
+    background: #fac031;
     padding: 8px 10px;
     margin: 0 80px;
     transition: 0.3s;
@@ -491,14 +432,9 @@ section .peça:hover i {
 .Horário {
     background-image: url(assets/bg1.jpg);
     height: 85vh;
-    position: relative;
 }
 
 .Horário h1 {
-    position: absolute;
-    top: 5%;
-    right: 0;
-    left: 0;
     margin: 0 auto;
     text-align: center;
     color: #000000;
@@ -526,42 +462,43 @@ section .peça:hover i {
     bottom: 15px;
 }
 
+.Horário {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .lista {
-    max-width: 768px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    bottom: 20%;
+    width: 90%;
     font-family: "Oswald", sans-serif;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .lista li {
-    position: relative;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
 }
 
 .lista li h3 {
     color: #c01e1e;
-    margin-bottom: 20px;
 }
 
-.lista li div {
-    width: 70%;
-    height: 1px;
-    position: absolute;
-    margin: 0 auto;
-    top: 50%;
-    right: 0;
-    left: 0;
-    background-color: #ACACAC
+.texto-marrom {
+    color: #c01e1e;
 }
 
 .lista li p,
 .texto-marrom {
-    position: absolute;
-    top: 0;
-    right: 0;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
 }
@@ -570,14 +507,12 @@ section .peça:hover i {
     color: #ACACAC;
 }
 
-.texto-marrom {
-    color: #c01e1e;
-}
-
 .Avaliações {
     width: 100%;
     height: 800px;
     padding: 70px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .Avaliações h1 {
@@ -607,15 +542,18 @@ section .peça:hover i {
     width: 95%;
     margin: 70px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ava1 {
-    width: 350px;
-    height: 535px;
+    width: 300px;
+    height: 480px;
     box-shadow: 0 2px 8px #00000080;
     border-radius: 8px;
     padding: 8px 20px;
     margin: 0 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .ava2 {
@@ -641,6 +579,8 @@ section .peça:hover i {
 
 .comentario {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .Nome {
@@ -685,6 +625,7 @@ section .peça:hover i {
     margin-top: 5px;
 }
 
+/*
 .pedido {
     width: 100%;
     height: 720px;
@@ -763,11 +704,43 @@ section .peça:hover i {
     margin-top: 20px;
     text-decoration: none;
 }
+*/
+
 
 .contatos {
-    background-color: #00ffff;
-    position: relative;
     width: 100%;
+    height: 500px;
+    padding: 10px;
+    background-image: url(assets/bg1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-text {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-cont li {
+    width: 160px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+a img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+iframe {
+    margin: 50px;
 }
 
 .rodape {
@@ -781,13 +754,22 @@ section .peça:hover i {
     text-align: center;
     background-color: #000000;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+a {
+    text-decoration: none;
+    color: #daa520;
 }
 
 .rodape span {
     color: #daa520;
 }
 
-.rodape a {
+.a {
     width: 60px;
     height: 60px;
     position: absolute;

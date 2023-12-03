@@ -16,10 +16,9 @@ body {
 
 section {
     width: 100%;
-    height: 500px;
+    height: 115px;
     display: flex;
     flex-direction: column;
-    
 }
 
 section nav {
@@ -27,11 +26,10 @@ section nav {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    right: 0;
-    left: 0;
     background: #A40F0F;
     box-shadow: 0 0 10px #00000080;
     z-index: 1000;
+    width: 100%;
 }
 
 section nav .logo img {
@@ -74,7 +72,7 @@ section nav ul li a:hover {
     color: #fac031;
 }
 
-section nav .icones i {
+.icones i {
     font-size: 18px;
     color: #ffffff;
     margin: 0 5px;
@@ -82,28 +80,128 @@ section nav .icones i {
     transition: 0.3s;
 }
 
-section nav .icones i:hover {
+.icones i:hover {
     color: #fac031;
-}
-
-.espaço {
-    height: 170px;
 }
 
 .começa {
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     /*position: relative;
     top: 110px;*/
-    background-color: #daa520;
+    background-color: #ACACAC;
 }
+
+@media screen and (max-width: 986px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .começa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 775px;
+    }
+
+
+
+    .Cardápio {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .caixas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+
+    .box {
+        width: 300px;
+    }
+
+    .Horário {
+        
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .lista li {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+
+}
+
+@media screen and (max-width: 570px) {
+    .texto h1 {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #A40F0F;
+    }
+
+
+
+
+
+
+    .Cardápio {
+        display: none;
+    }
+    /*
+    .Cardápio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .caixas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .box {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px #00000033;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }*/
+}
+
 /*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
-section .começo {
-    width: 85%;
-    height: 350px;
+.começo {
+    width: 95%;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -122,50 +220,47 @@ section .começo {
 
 /*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 .texto {
-    width: 700px;
-    height: 300px;
-    position: relative;
+    width: 550px;
+    height: 450px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
 }
 
-.texto p {
+.texto h1 {
+    width: 640px;
+    height: 100px;
+    font-size: 48px; 
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-section .começo .texto h1 {
-    width: 640px;
-    height: 100px;
-    font-size: 56px; 
-}
-
-section .texto h1 span {
+.texto h1 span {
     color: #fac031;
     margin-right: 15px;
     font-family: mv boli;
     padding-left: 17px;
 }
 
-section .texto h1 span::after {
+.texto h1 span::after {
     content: '';
-    width: 42%;
+    width: 100%;
     height: 2px;
     background: #fac031;
     display: block;
     position: relative;
     bottom: 15px;
-    left: 365px;
 }
 
-section .texto p {
-    width: 650px;
-    height: 140px;
+.texto p {
+    width: 500px;
+    height: 200px;
     text-align: justify;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 section .peça {
@@ -178,23 +273,10 @@ section .peça {
     padding: 12px 25px;
 }
 
-section .peça a {
-    color: #fff;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-section .peça i {
-    color: #fff;
-    transition: 0.3s;
-}
-
-section .peça:hover i {
-    transform: translateX(7px);
-}
-
 .começo_imgem img {
     height: 290px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .INFORMAÇÃO {
@@ -325,8 +407,8 @@ section .peça:hover i {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 5px;
+    /*flex-wrap: wrap;
+    padding-top: 5px;*/
 }
 
 .img1 {
@@ -430,8 +512,13 @@ section .peça:hover i {
 }
 
 .Horário {
+    width: 100%;
+    height: 450px;
     background-image: url(assets/bg1.jpg);
-    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .Horário h1 {
@@ -460,15 +547,6 @@ section .peça:hover i {
     display: block;
     position: relative;
     bottom: 15px;
-}
-
-.Horário {
-    width: 100%;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .lista {
@@ -542,7 +620,7 @@ section .peça:hover i {
     width: 95%;
     margin: 70px auto;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .ava1 {

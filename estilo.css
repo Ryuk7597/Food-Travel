@@ -280,8 +280,10 @@ section .peça:hover i {
 
 .Cardápio {
     width: 100%;
-    height: 1650px;
-    padding: 10px 0 5px 5px;
+    height: 2500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .Cardápio h1 {
@@ -309,85 +311,24 @@ section .peça:hover i {
 }
 
 .box {
+    width: 335px;
+    height: 570px;
     text-align: center;
     position: relative;
-    width: 335px;
-    height: 490px;
     box-shadow: 0 0 10px #00000033;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.box1 {
-    position: absolute;
-}
-
-.box2 {
-    position: absolute;
-    left: 340px;
-}
-
-.box3 {
-    position: absolute;
-    left: 680px;
-}
-
-.box4 {
-    position: absolute;
-    left: 1020px;
-}
-
-.box5 {
-    position: absolute;
-    top: 500px;
-}
-
-.box6 {
-    position: absolute;
-    top: 500px;
-    left: 340px;
-}
-
-.box7 {
-    position: absolute;
-    top: 500px;
-    left: 680px;
-}
-
-.box8 {
-    position: absolute;
-    top: 500px;
-    left: 1020px;
-}
-
-.box9 {
-    position: absolute;
-    top: 1000px;
-}
-
-.box10 {
-    position: absolute;
-    left: 340px;
-    top: 1000px;
-}
-
-.box4 a {
-    position: absolute;
-    bottom: 15px;
-}
-
-.box6 a {
-    position: absolute;
-    bottom: 15px;
-}
-
-.caixa {
+.caixas {
     width: 100%;
-    margin: 0 auto;
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    background-color: #A40F0F;
-    position: relative;
-    left: -5px;
+    grid-gap: 4px;
+    padding-top: 5px;
 }
 
 .img1 {
@@ -415,7 +356,6 @@ section .peça:hover i {
     float: right;
     position: relative;
     top: -240px;
-    right: -8px;
     opacity: 0;
     border-radius: 7px;
     transition: 0.3s;
@@ -424,7 +364,7 @@ section .peça:hover i {
 .botao {
     position: relative;
     top: -240px;
-    right: 20px;
+    right: -255px;
     opacity: 1;
 }
 
@@ -445,7 +385,8 @@ section .peça:hover i {
 }
 
 .info h2 {
-    width: 75%;
+    width: 80%;
+    height: 30px;
     text-align: center;
     margin: 10px auto 10px auto;
     font-size: 25px;
@@ -453,6 +394,8 @@ section .peça:hover i {
 }
 
 .info p {
+    width: 300px;
+    height: 70px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;

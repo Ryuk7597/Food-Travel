@@ -94,7 +94,6 @@ section nav ul li a:hover {
     gap: 20px;
     /*position: relative;
     top: 110px;*/
-    background-color: #ACACAC;
 }
 
 @media screen and (max-width: 986px) {
@@ -261,16 +260,6 @@ section nav ul li a:hover {
     text-align: justify;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-section .peça {
-    background: #fac031;
-    position: relative;
-    left: 123px;
-    bottom: 30px;
-    width: 150px;
-    cursor: pointer;
-    padding: 12px 25px;
 }
 
 .começo_imgem img {

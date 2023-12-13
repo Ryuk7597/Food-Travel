@@ -60,6 +60,18 @@ section nav ul li a:hover::after {
 section nav ul li a:hover {
     color: #fac031;
 }
+.icones i {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icones i:hover {
+    color: #fac031;
+}
+
 
 .hero {
     width: 100%;
@@ -220,4 +232,44 @@ a {
     background-color: #c90909;
     border-radius: 50px;
     border: 2px solid #ffffff;
+}
+@media only screen and (max-widht: 768px){
+    section nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    section nav .logo img{
+        margin: 10px 0;
+    }
+    section nav ul {
+        margin: 10px ;
+    }
+    section nav ul li {
+        margin: 10px 0;
+    }
+    .hero {
+        height: auto;
+        padding: 50px 0;
+    }
+    .form-box{
+        width: 80%;
+    }
+    .button-box {
+        width: 100%;
+    }
+    .toggle-btn{
+        width: 45%;
+    }
+    .social-icons img {
+        width: 40px;
+        margin: 0 8px;
+        
+    }
+    .input-group{
+        top: 80px;
+        width: 90%;
+    }
+    .rodape {
+        padding: 20px 5%;
+    }
 }

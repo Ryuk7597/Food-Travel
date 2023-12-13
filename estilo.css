@@ -1055,10 +1055,23 @@ a {
 }
 
 @media screen and (max-width: 420px) {
+    /*Topo*/
+    section nav .logo img {
+        width: 80px;
+    }
+
+    section nav ul li a {
+        font-size: 14px;
+    }
+
+    .icones i {
+        font-size: 15px;
+    }
+
     /*Contato*/
     iframe {
-        width: 420px; 
-        height: 370px;
+        width: 400px; 
+        height: 350px;
     }
 }
 

@@ -924,6 +924,16 @@ a {
         flex-wrap: wrap;
     }
 
+    .Cardápio h1 span::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fac031;
+        display: block;
+        position: relative;
+        bottom: 14px;
+    }
+
     /*Avaliações*/
     .Avaliações {
         width: 100%;
@@ -1001,7 +1011,7 @@ a {
         background: #fac031;
         display: block;
         position: relative;
-        bottom: 12px;
+        bottom: 10px;
     }
     
 
@@ -1035,7 +1045,7 @@ a {
         height: 2px;
         background: #fac031;
         position: relative;
-        bottom: 13px;
+        bottom: 12px;
         display: block;
     }
 }
@@ -1053,7 +1063,6 @@ a {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        background-color: #daa520;
     }
     
     .Horário h1 span::after {
@@ -1063,7 +1072,7 @@ a {
         background: #fac031;
         display: block;
         position: relative;
-        bottom: 15px;
+        bottom: 10px;
         right: -50px;
         display: flex;
         flex-wrap: wrap;

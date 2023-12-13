@@ -1072,8 +1072,8 @@ a {
         background: #fac031;
         display: block;
         position: relative;
-        bottom: 10px;
-        right: -50px;
+        bottom: 8px;
+        right: -45px;
         display: flex;
         flex-wrap: wrap;
     }

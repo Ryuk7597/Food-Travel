@@ -818,6 +818,12 @@ a {
         height: 775px;
     }
 
+    .começo_imgem img {
+        height: 250px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     /*informações*/
     .INFORMAÇÃO {
         width: 100%;
@@ -909,6 +915,14 @@ a {
         height: 6200px;
     }
 
+    .Cardápio h1 {
+        width: 300px;
+        font-size: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #daa520;
+    }
+
     /*Avaliações*/
     .Avaliações {
         width: 100%;
@@ -961,7 +975,7 @@ a {
     }
     
     .texto h1 {
-        width: 300px;
+        width: 240px;
         font-size: 40px;
         display: flex;
         align-items: center;
@@ -969,12 +983,12 @@ a {
     }
 
     .texto p {
-        width: 450px;
-        height: 200px;
+        width: 340px;
+        height: 250px;
         display: flex;
         text-align: justify;
         flex-wrap: wrap;
-        background-color: #daa520;
+        
     }
     
 
@@ -1012,10 +1026,11 @@ a {
     }
 
     .Horário h1 {
-        font-size: 50px;
+        font-size: 35px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        background-color: #daa520;
     }
     
     .Horário h1 span::after {
@@ -1036,12 +1051,12 @@ a {
         width: 60px;
         height: 60px;
         position: absolute;
-        bottom: 110px;
+        bottom: 140px;
         right: 0px;
     }
     
     .rodape img {
-        width: 90%;
+        width: 88%;
     }
 }
 
